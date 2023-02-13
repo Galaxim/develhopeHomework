@@ -59,12 +59,13 @@ public class main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        double ourDouble = 0.5;
+        double ourDouble = 1.7;
         double enemyDouble= 2.5;
         if (ourDouble > enemyDouble) {
             System.out.println("Greater than "+ enemyDouble);
         } else {
-            if(ourDouble ++ > enemyDouble) {
+            ourDouble ++;
+            if( ourDouble > enemyDouble) {
                 System.out.println("Now greater than " + enemyDouble);
             } else {
                 System.out.println("Still less than " + enemyDouble);
