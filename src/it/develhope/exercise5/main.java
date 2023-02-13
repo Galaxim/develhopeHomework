@@ -42,10 +42,10 @@ public class main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         double quote=4.4;
-        double newQuote=quote * 2;
-        System.out.println(newQuote);
-        quote /= 2;
+        quote *= 2;
         System.out.println(quote);
+        double gino = quote / 2;
+        System.out.println(gino);
     }
 
     /**
