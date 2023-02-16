@@ -59,15 +59,15 @@ public class main {
 
 
         while (remainingPoundsToSell>0){
-            if(poundToEuroExchangeRate>1.15){
-                    remainingPoundsToSell= remainingPoundsToSell - maxPoundsToSellPerDay;
+            if(poundToEuroExchangeRate>1.15) {
+                remainingPoundsToSell = remainingPoundsToSell - maxPoundsToSellPerDay;
             }
             daysToSell++;
+            poundToEuroExchangeRate = 1 + (Math.random() * 0.2);
         }
 
 
-
-        System.out.println("It took " + daysToSell + " days to exit that cursed economy");
+            System.out.println("It took " + daysToSell + " days to exit that cursed economy");
     }
 
     /**
