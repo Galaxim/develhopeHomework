@@ -25,11 +25,13 @@ public class main {
         double fahrenheit = ((celsius * 9) / 5) + 32;
         String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
         // End
-        System.out.println(conversionDescription);
-        System.out.println(convertDescription(celsius,fahrenheit));
+
+        System.out.println(convertDescription(celsius));
     }
-    static String convertDescription (double celsius, double fahrenheit){
-        return celsius + " Celsius is " + fahrenheit + " fahrenheit";
+    static String convertDescription (double celsius){
+        double fahrenheit = ((celsius * 9) / 5) + 32;
+        String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
+        return conversionDescription;
     }
 
     /**
@@ -49,7 +51,10 @@ public class main {
         }
     }
     static String adjustName (String names){
-        if (names.contains("0") == true){
+        if (names.contains("0") == true || names.contains("1") == true || names.contains("2") == true ||
+                names.contains("3") == true || names.contains("4") == true || names.contains("5") == true
+                || names.contains("6") == true || names.contains("7") == true || names.contains("8") == true
+                || names.contains("9") == true){
             return "Invalid";
         } else {
             return names.toUpperCase().trim();
